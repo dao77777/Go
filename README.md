@@ -15,15 +15,11 @@
 - [迭代器](#迭代器)
 - [数据结构: 引用传递](#数据结构-引用传递)
 - [异步](#异步)
+- [其他](#其他)
 - [面向对象](#面向对象)
 - [库](#库)
 - [CMD](#cmd)
 
-- 分配
-  - slice: `make(<type>, <len>[, <cap>])`
-  - map: `make(map[<type>]<type>, <len>)`
-  - channel: `make(chan <type>)`
-- 深拷贝: `copy(<dest>, <src>)`
 # 元信息
 - 变量构成: pair
   - type
@@ -101,6 +97,12 @@
   - x := <- channel
   - x, ok := <- channel
 - IO: select
+# 其他
+- 分配
+  - slice: `make(<type>, <len>[, <cap>])`
+  - map: `make(map[<type>]<type>, <len>)`
+  - channel: `make(chan <type>)`
+- 深拷贝: `copy(<dest>, <src>)`
 # 面向对象
 - `<type>{<propert>, ...}`
 - 公有私有: 属性或方法大写公有, 属性或方法小写私有
